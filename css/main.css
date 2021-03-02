@@ -125,7 +125,7 @@
   text-transform: uppercase;
   color: var(--white-primary);
 }
-.hero .hero-button {
+.hero-button {
   display: inline-block;
   padding: 10px 32px;
   min-width: 200px;
@@ -135,6 +135,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
+  letter-spacing: 0.06em;
   text-align: center;
   border: none;
   background-color: var(--blue-accent);
@@ -420,7 +421,7 @@
   margin-left: 70px;
 }
 
-.footer-soc h2 {
+.footer-title {
   font-weight: 700;
   line-height: 1.14px;
   font-size: 14px;
@@ -454,6 +455,49 @@
   border-radius: 50%;
   outline: none;
 }
+
+.subscribe {
+  margin-left: 93px;
+}
+
+.email::placeholder {
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.email {
+  margin-top: 20px;
+  min-width: 358px;
+  min-height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--background-color);
+}
+.footer-button {
+  transform: translateY(-50px) translateX(185%);
+
+  display: inline-block;
+  padding: 10px 32px;
+  min-width: 200px;
+  border-radius: 4px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  text-align: center;
+  border: none;
+  background-color: var(--blue-accent);
+  color: var(--white-primary);
+  cursor: pointer;
+}
+
+/* Modal */
 .backdrop {
   position: fixed;
   top: 0;
