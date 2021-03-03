@@ -576,13 +576,54 @@
   color: rgba(117, 117, 117, 0.5);
 }
 .checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  color: var(--grey-cnt);
 }
-.checkbox span {
+.checkbox svg {
+  margin-right: 9px;
+}
+.checkbox a {
   color: var(--blue-accent);
   text-decoration: underline;
+  margin-left: 3px;
+}
+.checkbox input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.send-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  padding: 10px 32px;
+  min-width: 200px;
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  border: none;
+
+  background-color: var(--blue-accent);
+  color: var(--white-primary);
+  cursor: pointer;
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
