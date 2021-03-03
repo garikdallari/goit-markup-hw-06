@@ -478,9 +478,11 @@
   background-color: var(--background-color);
 }
 .footer-button {
-  transform: translateY(-50px) translateX(185%);
+  transform: translateY(-50px) translateX(370px);
 
-  display: inline-block;
+  display: flex;
+  align-items: center;
+
   padding: 10px 32px;
   min-width: 200px;
   border-radius: 4px;
@@ -495,6 +497,9 @@
   background-color: var(--blue-accent);
   color: var(--white-primary);
   cursor: pointer;
+}
+.icon-send {
+  margin-left: 10px;
 }
 
 /* Modal */
