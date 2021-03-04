@@ -567,8 +567,12 @@
 }
 .modal-label:focus-within .modal-input {
   border: 1px solid var(--blue-accent);
+  outline: none;
 }
-
+.modal-label:focus-within .textarea {
+  border: 1px solid var(--blue-accent);
+  outline: none;
+}
 .textarea {
   width: 100%;
   height: 120px;
