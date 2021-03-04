@@ -367,7 +367,7 @@
 
 </form>
 <button class="footer-button" type="button">Подписаться
-   <svg class="footer-icon" width="24px" height="24px">
+   <svg class="button-icon" width="24px" height="24px">
        <use href="./images/symbol-defs.svg#icon-send"></use>
    </svg>
 </button>
@@ -382,7 +382,7 @@
 <div data-modal class="backdrop is-hidden">
     <div class="modal is-hidden">
         <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
-        <form>
+        <form class="form">
             
            <label class="modal-label"> <span>Имя</span>
                 <input class="modal-input" type="text" name="name">
@@ -407,14 +407,19 @@
                 <textarea class="textarea" name="feedback" placeholder="Введите текст"></textarea>
 
             </label>
+            <div class="checkbox-wrapper">
             <label class="checkbox">
-                <svg width="16px" height="15px">
-                    <use href="./images/symbol-defs.svg#icon-checkbox"></use>
-                </svg>
-                <input type="checkbox" name="terms">
+                
+                <input class="checkbox-input" type="checkbox" name="terms">
+                <!-- <svg class="icon" width="16px" height="15px">
+                    <use href="./images/symbol-defs.svg#icon-check"></use>
+                </svg> -->
+            
+                
                 Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
                 
             </label>
+            </div>
         </form>
         <button class="send-button" type="submit">Отправить</button>
         

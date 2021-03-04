@@ -55,3 +55,6 @@ body {
   font-weight: 400;
   overflow-x: auto;
 }
+form {
+  font-family: inherit;
+}
